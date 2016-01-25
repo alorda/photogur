@@ -1,11 +1,11 @@
 class PicturesController < ApplicationController
 
   def index
-    @pictures = Picture.all
+    @pictures = Picture.all # @pictures or @picture? see methods for show, new, create . See corresponding .erb files as well.
   end
 
   def show
-    @pictures = Picture.find(params[:id])
+    @picture = Picture.find(params[:id])
   end
 
   def new
